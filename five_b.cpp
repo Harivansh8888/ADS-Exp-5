@@ -47,4 +47,15 @@ class Shape
         return 0.5*base*height;
     }
 };
+int main()
+{
+    int s1,s2;
+    cout<<"ENTER SIDE 1 : ";
+    cin>>s1;
+    cout<<"\nENTER SIDE 2 : ";
+    cin>>s2;
+    cout<<"\n";
+    Shape obj(s1,s2);
+    obj.choice();
+}
 
