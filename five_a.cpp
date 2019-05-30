@@ -16,3 +16,15 @@ class Temperature
 			cout<<"Temperature in Fahrenheit: "<<f<<endl;
 		}
 };
+class Temp: public Temperature
+{
+	public:
+		float k;
+		Temp(float a) :Temperature(a){}
+		void calculate()
+		{
+			k=(((f-32)*5)/9)+273.15;
+			cout<<"Temperature in Kelvin: "<<k<<endl;
+		}
+};
+
