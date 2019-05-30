@@ -27,4 +27,12 @@ class Temp: public Temperature
 			cout<<"Temperature in Kelvin: "<<k<<endl;
 		}
 };
-
+int main(void)
+{
+	float arg;
+	cout<<"Press 1 to begin"<<endl;
+	cin>>arg;
+	Temp x(arg);
+	x.calculate();
+	return 0;
+}
