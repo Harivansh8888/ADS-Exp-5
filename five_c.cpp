@@ -54,3 +54,16 @@ void Matrix::operator +(Matrix x)
                 cout<<"\n";
         }
 }
+int main()
+{
+        Matrix m,n;
+        m.accept();       // Accepting Rows
+        n.accept();      // Accepting Columns
+        cout<<"\n First Matrix : \n\n";
+        m.display();   // Displaying First Matrix
+        cout<<"\n Second Matrix : \n\n";
+        n.display(); // Displaying Second Matrix
+        m+n;        // Addition of Two Matrices. Overloaded '+' Operator
+        return 0;
+}
+
