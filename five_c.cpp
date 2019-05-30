@@ -9,3 +9,15 @@ class Matrix
         void display();
         void operator +(Matrix x);
 };
+void Matrix::accept()
+{
+        cout<<"\n Enter Matrix Element (3 X 3) : \n";
+        for(int i=0; i<3; i++)
+        {
+                for(int j=0; j<3; j++)
+                {
+                        cout<<" ";
+                        cin>>a[i][j];
+                }
+        }
+}
